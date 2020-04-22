@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const getTeams = () => new Promise((resolve, reject) => {
-  axios.get('https://api.sheety.co/a710e43e-2721-45bb-b722-dafafea5b152')
+  axios.get('https://v2-api.sheety.co/c8a84476c8b1ec101177cffd8bfc27df/swgohCounters/teams')
     .then((res) => {
       resolve(res.data);
     })
