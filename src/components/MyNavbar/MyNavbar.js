@@ -37,9 +37,9 @@ class MyNavbar extends React.Component {
               <NavItem>
                 <NavLink tag={RRNavLink} to="/3v3/">3v3</NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink href="https://docs.google.com/forms/d/e/1FAIpQLSetDRLSGQHCNcw1iCKhNbmouBiOg1dseSBERJNGR5OORFx-lQ/viewform?embedded=true">Submit an Issue</NavLink>
-              </NavItem> */}
+              <NavItem>
+                <NavLink href="https://docs.google.com/forms/d/e/1FAIpQLSdQidz6SVXldDL5RN4b_y5bZzje0fw2YEzsOcX0C2cWMoWiiA/viewform">Submit a Counter</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

@@ -6,7 +6,7 @@ import './CounterRow.scss';
 
 class CounterRow extends React.Component {
   buildDescriptions = () => {
-    const submissionForm = 'https://docs.google.com/forms/d/e/1FAIpQLSdQidz6SVXldDL5RN4b_y5bZzje0fw2YEzsOcX0C2cWMoWiiA/viewform?embedded=true';
+    const submissionForm = 'https://docs.google.com/forms/d/e/1FAIpQLSdQidz6SVXldDL5RN4b_y5bZzje0fw2YEzsOcX0C2cWMoWiiA/viewform';
     /* const discordLink = 'https://discord.gg/eCnE48h'; */
     const { collapse, counterTeams, teamWithCharData } = this.props;
     const matchupDetails = counterTeams
