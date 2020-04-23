@@ -41,7 +41,7 @@ class CounterRow extends React.Component {
                   </div>
                   {(counterTeam.subs) ? (<p><small><strong className="text-secondary">Subs: </strong>{counterTeam.subs}</small></p>) : ''}
                   {(counterTeam.description) ? (<p><strong className="text-secondary">Strategy: </strong>{counterTeam.description}</p>) : (<p className="text-secondary"><small>Do you know the strategy to beat the {teamWithCharData.name} team with {counterTeam.counterTeamName}?  If so, please <a href={submissionForm}>submit an issue.</a></small></p>)}
-                  {(counterTeam.video) ? (<p><strong className="text-secondary">Video: </strong><a href="{counterTeam.video}" target="_blank">{counterTeam.video}</a></p>) : ''}
+                  {(counterTeam.video) ? (<p><strong className="text-secondary">Video: </strong><a href={counterTeam.video} target="_blank">{counterTeam.video}</a></p>) : ''}
                   {(counterTeam.description) ? '' : (<p className="text-secondary"><small>You can also join me on <a href={discordLink}>Discord</a> to start a discussion regarding this team.</small></p>)}
                 </div>
               </div>
