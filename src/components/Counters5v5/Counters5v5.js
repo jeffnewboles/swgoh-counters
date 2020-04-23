@@ -7,7 +7,7 @@ import CounterRow from '../CounterRow/CounterRow';
 
 import teamsData from '../../helpers/data/teamsData';
 import countersData from '../../helpers/data/countersData';
-import characterData from '../../helpers/data/characters.json';
+import characterData from '../../helpers/data/characters_new.json';
 
 import './Counters5v5.scss';
 
