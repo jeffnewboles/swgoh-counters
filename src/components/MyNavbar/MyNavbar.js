@@ -27,7 +27,7 @@ class MyNavbar extends React.Component {
     return (
       <div className="MyNavbar">
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand>SWGOH Counters</NavbarBrand>
+          <NavbarBrand>SWGOH Counters - Order of the Sith</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto text-center" navbar>
@@ -39,12 +39,6 @@ class MyNavbar extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="https://discord.gg/eCnE48h">Discord</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://patreon.com/saiastrange">Patreon</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/bobbybaxter/swgoh-counters/wiki">Wiki</NavLink>
               </NavItem>
               {/* <NavItem>
                 <NavLink href="https://docs.google.com/forms/d/e/1FAIpQLSetDRLSGQHCNcw1iCKhNbmouBiOg1dseSBERJNGR5OORFx-lQ/viewform?embedded=true">Submit an Issue</NavLink>
