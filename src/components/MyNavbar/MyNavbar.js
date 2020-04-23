@@ -26,7 +26,7 @@ class MyNavbar extends React.Component {
   render() {
     return (
       <div className="MyNavbar">
-        <Navbar color="dark" dark expand="md">
+        <Navbar dark expand="md">
           <NavbarBrand>SWGOH Counters - Order of the Sith</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -36,9 +36,6 @@ class MyNavbar extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink tag={RRNavLink} to="/3v3/">3v3</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://discord.gg/eCnE48h">Discord</NavLink>
               </NavItem>
               {/* <NavItem>
                 <NavLink href="https://docs.google.com/forms/d/e/1FAIpQLSetDRLSGQHCNcw1iCKhNbmouBiOg1dseSBERJNGR5OORFx-lQ/viewform?embedded=true">Submit an Issue</NavLink>
