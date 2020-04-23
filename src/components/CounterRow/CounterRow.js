@@ -6,8 +6,8 @@ import './CounterRow.scss';
 
 class CounterRow extends React.Component {
   buildDescriptions = () => {
-    const submissionForm = 'https://docs.google.com/forms/d/e/1FAIpQLSetDRLSGQHCNcw1iCKhNbmouBiOg1dseSBERJNGR5OORFx-lQ/viewform?embedded=true';
-    const discordLink = 'https://discord.gg/eCnE48h';
+    const submissionForm = 'https://docs.google.com/forms/d/e/1FAIpQLSdQidz6SVXldDL5RN4b_y5bZzje0fw2YEzsOcX0C2cWMoWiiA/viewform?embedded=true';
+    /* const discordLink = 'https://discord.gg/eCnE48h'; */
     const { collapse, counterTeams, teamWithCharData } = this.props;
     const matchupDetails = counterTeams
       .map(counterTeam => (
@@ -27,7 +27,6 @@ class CounterRow extends React.Component {
                   {(teamWithCharData.subs) ? (<p><small><strong className="text-secondary">Subs: </strong>{teamWithCharData.subs}</small></p>) : ''}
                   {(teamWithCharData.description) ? (<p><strong className="text-secondary">Details: </strong>{teamWithCharData.description}</p>) : ''}
                   {(teamWithCharData.counterStrategy) ? (<p><strong className="text-secondary">General Strategy: </strong>{teamWithCharData.counterStrategy}</p>) : (<p className="text-secondary"><small>You can help me add common substitutions, a general counter strategy, or details about this team by <a href={submissionForm}>submiting an issue.</a></small></p>)}
-                  {(teamWithCharData.counterStrategy) ? '' : (<p className="text-secondary"><small>You can also join me on <a href={discordLink}>Discord</a> to discuss counters a little further.</small></p>)}
                 </div>
                 <div className="detailsDivRight col-6">
                   <h6 className="text-secondary">Counter Team</h6>
@@ -42,7 +41,6 @@ class CounterRow extends React.Component {
                   {(counterTeam.subs) ? (<p><small><strong className="text-secondary">Subs: </strong>{counterTeam.subs}</small></p>) : ''}
                   {(counterTeam.description) ? (<p><strong className="text-secondary">Strategy: </strong>{counterTeam.description}</p>) : (<p className="text-secondary"><small>Do you know the strategy to beat the {teamWithCharData.name} team with {counterTeam.counterTeamName}?  If so, please <a href={submissionForm}>submit an issue.</a></small></p>)}
                   {(counterTeam.video) ? (<p><strong className="text-secondary">Video: </strong><a href={counterTeam.video} target="_blank" rel="noopener noreferrer">{counterTeam.video}</a></p>) : ''}
-                  {(counterTeam.description) ? '' : (<p className="text-secondary"><small>You can also join me on <a href={discordLink}>Discord</a> to start a discussion regarding this team.</small></p>)}
                 </div>
               </div>
             </Collapse>
