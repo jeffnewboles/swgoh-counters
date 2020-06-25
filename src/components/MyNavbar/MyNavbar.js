@@ -27,7 +27,7 @@ class MyNavbar extends React.Component {
     return (
       <div className="MyNavbar">
         <Navbar dark expand="md">
-          <NavbarBrand>SWGOH Counters - Order of the Sith</NavbarBrand>
+          <NavbarBrand>SWGOH Counters</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto text-center" navbar>
